@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>632</width>
+    <height>468</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>632</width>
+    <height>468</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Server log</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::DialogInformation"/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>632</width>
+      <height>468</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>CrossCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::FocusPolicy::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Стиль для самого виджета списка (окно терминала) */
+QListWidget, QListView {
+    background-color: #1a0f02;       /* Очень темный, почти черный фон с теплым оттенком */
+    border: 2px solid #3d2406;        /* Темно-янтарная тонкая рамка вокруг */
+    color: #ffaa00;                  /* Основной янтарно-оранжевый цвет текста (как в neofetch) */
+    font-family: &quot;Courier New&quot;, &quot;Lucida Console&quot;, &quot;Consolas&quot;, monospace; /* Моноширинный шрифт */
+    font-size: 16px;
+    outline: none;                   /* Убирает пунктирную рамку фокуса Qt */
+}
+
+/* Настройка полосы прокрутки, чтобы она не портила ретро-вид */
+QScrollBar:vertical {
+    border: none;
+    background: #1a0f02;
+    width: 10px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #54340a;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+/* Универсальный стиль для элементов во всех состояниях (обычное, наведение, выбор) */
+QListWidget::item, 
+QListWidget::item:hover, 
+QListWidget::item:disabled,
+QListWidget::item:selected, 
+QListWidget::item:selected:active, 
+QListWidget::item:selected:!active {
+    background: transparent;          /* Никакой подсветки фона при наведении и кликах */
+    color: #ffaa00;                   /* Текст всегда остается янтарным */
+    border: none;                     /* Никаких рамок вокруг выбранной строки */
+    padding: 3px 5px;                 /* Небольшие отступы для имитации строк терминала */
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="setting_frame">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>250</y>
+      <width>191</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Главный контейнер */
+QFrame {
+    background-color: #12110f; /* Сделаем чуть темнее для лучшего контраста */
+    border: 1px solid #ffb000;
+    border-radius: 0px;
+    font-family: &quot;Courier New&quot;, &quot;Lucida Console&quot;, monospace;
+}
+
+/* Подписи — УБИРАЕМ РАМКУ (border: none) */
+QLabel {
+    color: #ffb000;
+    font-size: 13px;
+    background: transparent;
+    border: none; /* Убирает ненужные рамки вокруг текста подписей */
+    padding: 2px 0px;
+}
+
+/* Поля ввода */
+QLineEdit {
+    background-color: #1a1815; 
+    border: 1px solid #c88a00;
+    color: #ffb000;
+    padding: 4px;
+    font-size: 14px;
+    font-family: &quot;Courier New&quot;, &quot;Lucida Console&quot;, monospace;
+    selection-background-color: #ffb000;
+    selection-color: #12110f;
+}
+
+QLineEdit:focus {
+    border: 1px solid #ffb000;
+}
+
+/* Кнопка — ПРИНУДИТЕЛЬНО ЗАДАЕМ МОНОШИРИННЫЙ ШРИФТ */
+QPushButton {
+    background-color: #ffb000;  /* Сделаем её залитой по умолчанию, как у вас */
+    border: 1px solid #ffb000;
+    color: #12110f;             /* Темный текст на оранжевом фоне */
+    padding: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: &quot;Courier New&quot;, &quot;Lucida Console&quot;, monospace; /* Исправляет шрифт */
+}
+
+QPushButton:hover {
+    background-color: #e09b00;
+    border-color: #e09b00;
+}
+
+QPushButton:pressed {
+    background-color: #12110f;  /* Инверсия при клике */
+    color: #ffb000;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>150</width>
+       <height>159</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Users count (1-4)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="users_count">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Server port</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="port">
+        <property name="text">
+         <string>8080</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="run_button">
+        <property name="text">
+         <string>Run server</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

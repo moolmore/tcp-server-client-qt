@@ -3,6 +3,8 @@
 To start the server and client, there are *.bat* files: 
 - run_server.bat 
 - run_client.bat
+  
+**For a better view, install GoogleSans.ttf**
 
 > The server code was rewritten from the **Socket** library to the **Qt slot system (QTcpServer, QTcpSocket, QHostAddress)** using ChatGPT to handle asynchronous data reception from the server
 

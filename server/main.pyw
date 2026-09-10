@@ -21,6 +21,7 @@ from PySide6.QtNetwork import (
     QTcpServer, QTcpSocket, QHostAddress
 )
 import server_ui
+from datetime import datetime
 
 
 class ServerWindow(QMainWindow, server_ui.Ui_MainWindow):
@@ -60,8 +61,9 @@ class ServerWindow(QMainWindow, server_ui.Ui_MainWindow):
             self.out(f"Bind: {e}")
 
     def out(self, msg: str):
+
+        msg = f"{datetime.now().strftime("%H:%M")}: {msg}"
         self.listWidget.addItem(msg)
-        print(msg)
 
 
 def user_connect_waiting():

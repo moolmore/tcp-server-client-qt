@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'clientSirvHm.ui'
+## Form generated from reading UI file 'clientGhMiAt.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.11.1
 ##
@@ -431,9 +431,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addLayout(self.horizontalLayout)
 
-        self.layoutWidget1 = QWidget(self.centralwidget)
+        self.connectionWidget = QWidget(self.centralwidget)
+        self.connectionWidget.setObjectName(u"connectionWidget")
+        self.connectionWidget.setGeometry(QRect(400, 100, 181, 281))
+        self.layoutWidget1 = QWidget(self.connectionWidget)
         self.layoutWidget1.setObjectName(u"layoutWidget1")
-        self.layoutWidget1.setGeometry(QRect(410, 100, 161, 242))
+        self.layoutWidget1.setGeometry(QRect(10, 10, 161, 242))
         self.verticalLayout_2 = QVBoxLayout(self.layoutWidget1)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)

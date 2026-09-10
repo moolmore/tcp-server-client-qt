@@ -1,7 +1,9 @@
-Qt tcp server & client 
+## Python Qt TCP server & client 
 
-<img width="1722" height="820" alt="image" src="https://github.com/user-attachments/assets/53e5e19b-b840-4d61-8ef2-6379d351bf88" />
+To start the server and client, there are *.bat* files: 
+- run_server.bat 
+- run_client.bat
 
-Server code rewrite from python socket to
-Qtcp via Chat GPT
+> The server code was rewritten from the **Socket** library to the **Qt slot system (QTcpServer, QTcpSocket, QHostAddress)** using ChatGPT to handle asynchronous data reception from the server
 
+<img width="1403" height="674" alt="image" src="https://github.com/user-attachments/assets/7ee5b672-d324-4bf9-a7b1-00695beb8fd8" />

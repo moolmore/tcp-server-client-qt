@@ -1,20 +1,8 @@
-from PySide6.QtCore import (
-    QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt, QTimer
-)
-
-from PySide6.QtGui import (
-    QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform
-)
 
 from PySide6.QtWidgets import (
     QApplication, QHBoxLayout, QLabel, QLineEdit,
     QListWidget, QListWidgetItem, QMainWindow, QPushButton,
-    QSizePolicy, QVBoxLayout, QWidget
+    QSizePolicy, QVBoxLayout, QWidget, QGraphicsBlurEffect
 )
 
 from PySide6.QtNetwork import (
@@ -28,7 +16,10 @@ class ServerWindow(QMainWindow, server_ui.Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setWindowTitle("Server manager 1.0")
+        self.setWindowTitle("Server manager 1.1")
+        self.blur = QGraphicsBlurEffect()
+        self.listWidget_blur.setGraphicsEffect(self.blur)
+
 
     def connectSlots(self):
         self.run_button.clicked.connect(self.runButton)
@@ -64,6 +55,7 @@ class ServerWindow(QMainWindow, server_ui.Ui_MainWindow):
 
         msg = f"{datetime.now().strftime("%H:%M")}: {msg}"
         self.listWidget.addItem(msg)
+        self.listWidget_blur.addItem(msg)
 
 
 def user_connect_waiting():

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'serveraikUuu.ui'
+## Form generated from reading UI file 'serverfjujie.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.11.1
 ##
@@ -38,10 +38,11 @@ class Ui_MainWindow(object):
         self.listWidget.setFocusPolicy(Qt.FocusPolicy.NoFocus)
         self.listWidget.setStyleSheet(u"/* \u0421\u0442\u0438\u043b\u044c \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u0433\u043e \u0432\u0438\u0434\u0436\u0435\u0442\u0430 \u0441\u043f\u0438\u0441\u043a\u0430 (\u043e\u043a\u043d\u043e \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u0430) */\n"
 "QListWidget, QListView {\n"
-"    background-color: #1a0f02;       /* \u041e\u0447\u0435\u043d\u044c \u0442\u0435\u043c\u043d\u044b\u0439, \u043f\u043e\u0447\u0442\u0438 \u0447\u0435\u0440\u043d\u044b\u0439 \u0444\u043e\u043d \u0441 \u0442\u0435\u043f\u043b\u044b\u043c \u043e\u0442\u0442\u0435\u043d\u043a\u043e\u043c */\n"
+"           /* \u041e\u0447\u0435\u043d\u044c \u0442\u0435\u043c\u043d\u044b\u0439, \u043f\u043e\u0447\u0442\u0438 \u0447\u0435\u0440\u043d\u044b\u0439 \u0444\u043e\u043d \u0441 \u0442\u0435\u043f\u043b\u044b\u043c \u043e\u0442\u0442\u0435\u043d\u043a\u043e\u043c */\n"
+"	background-color: rgba(26, 15, 2, 100);\n"
 "    border: 2px solid #3d2406;        /* \u0422\u0435\u043c\u043d\u043e-\u044f\u043d\u0442\u0430\u0440\u043d\u0430\u044f \u0442\u043e\u043d\u043a\u0430\u044f \u0440\u0430\u043c\u043a\u0430 \u0432\u043e\u043a\u0440\u0443\u0433 */\n"
-"    color: #ffaa00;                  /* \u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u044f\u043d\u0442\u0430\u0440\u043d\u043e-\u043e\u0440\u0430\u043d\u0436\u0435\u0432\u044b\u0439 \u0446\u0432\u0435\u0442"
-                        " \u0442\u0435\u043a\u0441\u0442\u0430 (\u043a\u0430\u043a \u0432 neofetch) */\n"
+"    color: #ffaa00;                  /* \u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u044f\u043d\u0442\u0430\u0440\u043d\u043e-\u043e\u0440\u0430\u043d\u0436\u0435\u0432\u044b\u0439 \u0446"
+                        "\u0432\u0435\u0442 \u0442\u0435\u043a\u0441\u0442\u0430 (\u043a\u0430\u043a \u0432 neofetch) */\n"
 "    font-family: \"Courier New\", \"Lucida Console\", \"Consolas\", monospace; /* \u041c\u043e\u043d\u043e\u0448\u0438\u0440\u0438\u043d\u043d\u044b\u0439 \u0448\u0440\u0438\u0444\u0442 */\n"
 "    font-size: 16px;\n"
 "    outline: none;                   /* \u0423\u0431\u0438\u0440\u0430\u0435\u0442 \u043f\u0443\u043d\u043a\u0442\u0438\u0440\u043d\u0443\u044e \u0440\u0430\u043c\u043a\u0443 \u0444\u043e\u043a\u0443\u0441\u0430 Qt */\n"
@@ -55,8 +56,8 @@ class Ui_MainWindow(object):
 "    margin: 0px;\n"
 "}\n"
 "QScrollBar::handle:vertical {\n"
-"    background: #54"
-                        "340a;\n"
+" "
+                        "   background: #54340a;\n"
 "    min-height: 20px;\n"
 "}\n"
 "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {\n"
@@ -70,8 +71,8 @@ class Ui_MainWindow(object):
 "QListWidget::item:selected, \n"
 "QListWidget::item:selected:active, \n"
 "QListWidget::item:selected:!active {\n"
-"    background: transparent;          /* \u041d\u0438\u043a\u0430\u043a\u043e\u0439 \u043f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0438 \u0444\u043e\u043d\u0430 \u043f\u0440\u0438 \u043d\u0430\u0432\u0435\u0434\u0435\u043d\u0438\u0438 \u0438 \u043a\u043b"
-                        "\u0438\u043a\u0430\u0445 */\n"
+"    background: transparent;          /* \u041d\u0438\u043a\u0430\u043a\u043e\u0439 \u043f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0438 \u0444\u043e\u043d\u0430 \u043f\u0440\u0438 \u043d\u0430\u0432\u0435\u0434\u0435\u043d\u0438\u0438"
+                        " \u0438 \u043a\u043b\u0438\u043a\u0430\u0445 */\n"
 "    color: #ffaa00;                   /* \u0422\u0435\u043a\u0441\u0442 \u0432\u0441\u0435\u0433\u0434\u0430 \u043e\u0441\u0442\u0430\u0435\u0442\u0441\u044f \u044f\u043d\u0442\u0430\u0440\u043d\u044b\u043c */\n"
 "    border: none;                     /* \u041d\u0438\u043a\u0430\u043a\u0438\u0445 \u0440\u0430\u043c\u043e\u043a \u0432\u043e\u043a\u0440\u0443\u0433 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0438 */\n"
 "    padding: 3px 5px;                 /* \u041d\u0435\u0431\u043e\u043b\u044c\u0448\u0438\u0435 \u043e\u0442\u0441\u0442\u0443\u043f\u044b \u0434\u043b\u044f \u0438\u043c\u0438\u0442\u0430\u0446\u0438\u0438 \u0441\u0442\u0440\u043e\u043a \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u0430 */\n"
@@ -138,38 +139,93 @@ class Ui_MainWindow(object):
 "")
         self.setting_frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.setting_frame.setFrameShadow(QFrame.Shadow.Raised)
-        self.widget = QWidget(self.setting_frame)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(20, 20, 150, 159))
-        self.verticalLayout = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.setting_frame)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(20, 20, 150, 159))
+        self.verticalLayout = QVBoxLayout(self.layoutWidget)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label = QLabel(self.widget)
+        self.label = QLabel(self.layoutWidget)
         self.label.setObjectName(u"label")
 
         self.verticalLayout.addWidget(self.label)
 
-        self.users_count = QLineEdit(self.widget)
+        self.users_count = QLineEdit(self.layoutWidget)
         self.users_count.setObjectName(u"users_count")
 
         self.verticalLayout.addWidget(self.users_count)
 
-        self.label_2 = QLabel(self.widget)
+        self.label_2 = QLabel(self.layoutWidget)
         self.label_2.setObjectName(u"label_2")
 
         self.verticalLayout.addWidget(self.label_2)
 
-        self.port = QLineEdit(self.widget)
+        self.port = QLineEdit(self.layoutWidget)
         self.port.setObjectName(u"port")
 
         self.verticalLayout.addWidget(self.port)
 
-        self.run_button = QPushButton(self.widget)
+        self.run_button = QPushButton(self.layoutWidget)
         self.run_button.setObjectName(u"run_button")
 
         self.verticalLayout.addWidget(self.run_button)
 
+        self.listWidget_blur = QListWidget(self.centralwidget)
+        self.listWidget_blur.setObjectName(u"listWidget_blur")
+        self.listWidget_blur.setGeometry(QRect(0, 0, 632, 468))
+        self.listWidget_blur.viewport().setProperty(u"cursor", QCursor(Qt.CursorShape.CrossCursor))
+        self.listWidget_blur.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.listWidget_blur.setStyleSheet(u"/* \u0421\u0442\u0438\u043b\u044c \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u0433\u043e \u0432\u0438\u0434\u0436\u0435\u0442\u0430 \u0441\u043f\u0438\u0441\u043a\u0430 (\u043e\u043a\u043d\u043e \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u0430) */\n"
+"QListWidget, QListView {\n"
+"           /* \u041e\u0447\u0435\u043d\u044c \u0442\u0435\u043c\u043d\u044b\u0439, \u043f\u043e\u0447\u0442\u0438 \u0447\u0435\u0440\u043d\u044b\u0439 \u0444\u043e\u043d \u0441 \u0442\u0435\u043f\u043b\u044b\u043c \u043e\u0442\u0442\u0435\u043d\u043a\u043e\u043c */\n"
+"	background-color: rgba(255, 255, 255, 0);\n"
+"    border: 2px solid #3d2406;        /* \u0422\u0435\u043c\u043d\u043e-\u044f\u043d\u0442\u0430\u0440\u043d\u0430\u044f \u0442\u043e\u043d\u043a\u0430\u044f \u0440\u0430\u043c\u043a\u0430 \u0432\u043e\u043a\u0440\u0443\u0433 */\n"
+"    color: #ffaa00;                  /* \u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u044f\u043d\u0442\u0430\u0440\u043d\u043e-\u043e\u0440\u0430\u043d\u0436\u0435\u0432\u044b\u0439 "
+                        "\u0446\u0432\u0435\u0442 \u0442\u0435\u043a\u0441\u0442\u0430 (\u043a\u0430\u043a \u0432 neofetch) */\n"
+"    font-family: \"Courier New\", \"Lucida Console\", \"Consolas\", monospace; /* \u041c\u043e\u043d\u043e\u0448\u0438\u0440\u0438\u043d\u043d\u044b\u0439 \u0448\u0440\u0438\u0444\u0442 */\n"
+"    font-size: 16px;\n"
+"    outline: none;                   /* \u0423\u0431\u0438\u0440\u0430\u0435\u0442 \u043f\u0443\u043d\u043a\u0442\u0438\u0440\u043d\u0443\u044e \u0440\u0430\u043c\u043a\u0443 \u0444\u043e\u043a\u0443\u0441\u0430 Qt */\n"
+"}\n"
+"\n"
+"/* \u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u043f\u043e\u043b\u043e\u0441\u044b \u043f\u0440\u043e\u043a\u0440\u0443\u0442\u043a\u0438, \u0447\u0442\u043e\u0431\u044b \u043e\u043d\u0430 \u043d\u0435 \u043f\u043e\u0440\u0442\u0438\u043b\u0430 \u0440\u0435\u0442\u0440\u043e-\u0432\u0438\u0434 */\n"
+"QScrollBar:vertical {\n"
+"    border: none;\n"
+"    background: #1a0f02;\n"
+"    width: 10px;\n"
+"    margin: 0px;\n"
+"}\n"
+"QScrollBar::handle:vertical {"
+                        "\n"
+"    background: #54340a;\n"
+"    min-height: 20px;\n"
+"}\n"
+"QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {\n"
+"    background: none;\n"
+"}\n"
+"\n"
+"/* \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0442\u0438\u043b\u044c \u0434\u043b\u044f \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432 \u0432\u043e \u0432\u0441\u0435\u0445 \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u044f\u0445 (\u043e\u0431\u044b\u0447\u043d\u043e\u0435, \u043d\u0430\u0432\u0435\u0434\u0435\u043d\u0438\u0435, \u0432\u044b\u0431\u043e\u0440) */\n"
+"QListWidget::item, \n"
+"QListWidget::item:hover, \n"
+"QListWidget::item:disabled,\n"
+"QListWidget::item:selected, \n"
+"QListWidget::item:selected:active, \n"
+"QListWidget::item:selected:!active {\n"
+"    background: transparent;          /* \u041d\u0438\u043a\u0430\u043a\u043e\u0439 \u043f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0438 \u0444\u043e\u043d\u0430 \u043f\u0440\u0438 \u043d\u0430\u0432\u0435\u0434\u0435\u043d\u0438"
+                        "\u0438 \u0438 \u043a\u043b\u0438\u043a\u0430\u0445 */\n"
+"    color: #ffaa00;                   /* \u0422\u0435\u043a\u0441\u0442 \u0432\u0441\u0435\u0433\u0434\u0430 \u043e\u0441\u0442\u0430\u0435\u0442\u0441\u044f \u044f\u043d\u0442\u0430\u0440\u043d\u044b\u043c */\n"
+"    border: none;                     /* \u041d\u0438\u043a\u0430\u043a\u0438\u0445 \u0440\u0430\u043c\u043e\u043a \u0432\u043e\u043a\u0440\u0443\u0433 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0438 */\n"
+"    padding: 3px 5px;                 /* \u041d\u0435\u0431\u043e\u043b\u044c\u0448\u0438\u0435 \u043e\u0442\u0441\u0442\u0443\u043f\u044b \u0434\u043b\u044f \u0438\u043c\u0438\u0442\u0430\u0446\u0438\u0438 \u0441\u0442\u0440\u043e\u043a \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u0430 */\n"
+"}\n"
+"")
+        self.label_3 = QLabel(self.centralwidget)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(0, 0, 632, 468))
+        self.label_3.setStyleSheet(u"background-color: rgba(26, 15, 2, 255);")
         MainWindow.setCentralWidget(self.centralwidget)
+        self.label_3.raise_()
+        self.listWidget_blur.raise_()
+        self.listWidget.raise_()
+        self.setting_frame.raise_()
 
         self.retranslateUi(MainWindow)
 
@@ -183,5 +239,6 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Server port", None))
         self.port.setText(QCoreApplication.translate("MainWindow", u"8080", None))
         self.run_button.setText(QCoreApplication.translate("MainWindow", u"Run server", None))
+        self.label_3.setText("")
     # retranslateUi
 
